@@ -14,6 +14,8 @@
 		412B1E5D28A7961300B9C27E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1E5C28A7961300B9C27E /* AppDelegate.swift */; };
 		412B1E7F28A79B7500B9C27E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1E7E28A79B7500B9C27E /* SceneDelegate.swift */; };
 		412B1E8128A7A1AE00B9C27E /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1E8028A7A1AE00B9C27E /* Store.swift */; };
+		412B1E8528A7BA0A00B9C27E /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1E8428A7BA0A00B9C27E /* LocationView.swift */; };
+		412B1E8728A7BB0600B9C27E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1E8628A7BB0600B9C27E /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,9 @@
 		412B1E7E28A79B7500B9C27E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		412B1E8028A7A1AE00B9C27E /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		412B1E8228A7A55C00B9C27E /* MySKConfig.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = MySKConfig.storekit; sourceTree = "<group>"; };
+		412B1E8428A7BA0A00B9C27E /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		412B1E8628A7BB0600B9C27E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		412B1E8828A7BDF400B9C27E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,11 +64,13 @@
 		412B1E4228A7819F00B9C27E /* ChoreStar */ = {
 			isa = PBXGroup;
 			children = (
+				412B1E8828A7BDF400B9C27E /* Info.plist */,
 				412B1E8228A7A55C00B9C27E /* MySKConfig.storekit */,
 				412B1E4328A7819F00B9C27E /* ChoreStarApp.swift */,
 				412B1E5C28A7961300B9C27E /* AppDelegate.swift */,
 				412B1E7E28A79B7500B9C27E /* SceneDelegate.swift */,
-				412B1E5B28A7960300B9C27E /* New Group */,
+				412B1E8628A7BB0600B9C27E /* LocationManager.swift */,
+				412B1E5B28A7960300B9C27E /* TestViews */,
 				412B1E4528A7819F00B9C27E /* ContentView.swift */,
 				412B1E8028A7A1AE00B9C27E /* Store.swift */,
 				412B1E4728A781A000B9C27E /* Assets.xcassets */,
@@ -81,11 +88,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		412B1E5B28A7960300B9C27E /* New Group */ = {
+		412B1E5B28A7960300B9C27E /* TestViews */ = {
 			isa = PBXGroup;
 			children = (
+				412B1E8428A7BA0A00B9C27E /* LocationView.swift */,
 			);
-			path = "New Group";
+			path = TestViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,7 +171,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				412B1E8128A7A1AE00B9C27E /* Store.swift in Sources */,
+				412B1E8528A7BA0A00B9C27E /* LocationView.swift in Sources */,
 				412B1E5D28A7961300B9C27E /* AppDelegate.swift in Sources */,
+				412B1E8728A7BB0600B9C27E /* LocationManager.swift in Sources */,
 				412B1E4628A7819F00B9C27E /* ContentView.swift in Sources */,
 				412B1E4428A7819F00B9C27E /* ChoreStarApp.swift in Sources */,
 				412B1E7F28A79B7500B9C27E /* SceneDelegate.swift in Sources */,
@@ -297,6 +307,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChoreStar/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Share your location to find chores near you!";
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -331,6 +343,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChoreStar/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Share your location to find chores near you!";
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
