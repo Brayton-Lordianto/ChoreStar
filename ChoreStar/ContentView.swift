@@ -6,14 +6,22 @@
 //
 
 import SwiftUI
+import StoreKit
 
 struct ContentView: View {
+    var vm = ViewModel()
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Button("Pay") {
+                Task { await vm.purchase(tag: "testProduct2") }
+            }
+        }
+        .onAppear {
+            Task { await vm.fetch() }
         }
     }
 }
