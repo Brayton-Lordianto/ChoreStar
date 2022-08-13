@@ -14,8 +14,12 @@
 		412B1E5D28A7961300B9C27E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1E5C28A7961300B9C27E /* AppDelegate.swift */; };
 		412B1E7F28A79B7500B9C27E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1E7E28A79B7500B9C27E /* SceneDelegate.swift */; };
 		412B1E8128A7A1AE00B9C27E /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1E8028A7A1AE00B9C27E /* Store.swift */; };
-		412B1E8528A7BA0A00B9C27E /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1E8428A7BA0A00B9C27E /* LocationView.swift */; };
+		412B1E8528A7BA0A00B9C27E /* LocationViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1E8428A7BA0A00B9C27E /* LocationViewTest.swift */; };
 		412B1E8728A7BB0600B9C27E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1E8628A7BB0600B9C27E /* LocationManager.swift */; };
+		412B1E8C28A7BFBE00B9C27E /* MapViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1E8B28A7BFBE00B9C27E /* MapViewTest.swift */; };
+		412B1E8E28A7C07000B9C27E /* HomeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1E8D28A7C07000B9C27E /* HomeTest.swift */; };
+		412B1E9028A7C64300B9C27E /* HomeTestV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1E8F28A7C64300B9C27E /* HomeTestV2.swift */; };
+		412B1E9228A7C77900B9C27E /* FindingChoreMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1E9128A7C77900B9C27E /* FindingChoreMan.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +33,13 @@
 		412B1E7E28A79B7500B9C27E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		412B1E8028A7A1AE00B9C27E /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		412B1E8228A7A55C00B9C27E /* MySKConfig.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = MySKConfig.storekit; sourceTree = "<group>"; };
-		412B1E8428A7BA0A00B9C27E /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		412B1E8428A7BA0A00B9C27E /* LocationViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewTest.swift; sourceTree = "<group>"; };
 		412B1E8628A7BB0600B9C27E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		412B1E8828A7BDF400B9C27E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		412B1E8B28A7BFBE00B9C27E /* MapViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewTest.swift; sourceTree = "<group>"; };
+		412B1E8D28A7C07000B9C27E /* HomeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTest.swift; sourceTree = "<group>"; };
+		412B1E8F28A7C64300B9C27E /* HomeTestV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTestV2.swift; sourceTree = "<group>"; };
+		412B1E9128A7C77900B9C27E /* FindingChoreMan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindingChoreMan.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +99,11 @@
 		412B1E5B28A7960300B9C27E /* TestViews */ = {
 			isa = PBXGroup;
 			children = (
-				412B1E8428A7BA0A00B9C27E /* LocationView.swift */,
+				412B1E8428A7BA0A00B9C27E /* LocationViewTest.swift */,
+				412B1E8B28A7BFBE00B9C27E /* MapViewTest.swift */,
+				412B1E8D28A7C07000B9C27E /* HomeTest.swift */,
+				412B1E8F28A7C64300B9C27E /* HomeTestV2.swift */,
+				412B1E9128A7C77900B9C27E /* FindingChoreMan.swift */,
 			);
 			path = TestViews;
 			sourceTree = "<group>";
@@ -170,11 +182,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				412B1E8E28A7C07000B9C27E /* HomeTest.swift in Sources */,
 				412B1E8128A7A1AE00B9C27E /* Store.swift in Sources */,
-				412B1E8528A7BA0A00B9C27E /* LocationView.swift in Sources */,
+				412B1E8528A7BA0A00B9C27E /* LocationViewTest.swift in Sources */,
 				412B1E5D28A7961300B9C27E /* AppDelegate.swift in Sources */,
 				412B1E8728A7BB0600B9C27E /* LocationManager.swift in Sources */,
 				412B1E4628A7819F00B9C27E /* ContentView.swift in Sources */,
+				412B1E9028A7C64300B9C27E /* HomeTestV2.swift in Sources */,
+				412B1E9228A7C77900B9C27E /* FindingChoreMan.swift in Sources */,
+				412B1E8C28A7BFBE00B9C27E /* MapViewTest.swift in Sources */,
 				412B1E4428A7819F00B9C27E /* ChoreStarApp.swift in Sources */,
 				412B1E7F28A79B7500B9C27E /* SceneDelegate.swift in Sources */,
 			);

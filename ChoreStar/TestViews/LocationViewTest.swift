@@ -13,6 +13,7 @@ struct LocationView: View {
     @StateObject var locationManager = LocationManager()
     
     var userLatitude: String {
+        // locationManager.lastLocation?.coordinate is CL2D
         return "\(locationManager.lastLocation?.coordinate.latitude ?? 0)"
     }
     
@@ -26,6 +27,7 @@ struct LocationView: View {
             HStack {
                 Text("latitude: \(userLatitude)")
                 Text("longitude: \(userLongitude)")
+                
             }
         }
     }
