@@ -20,6 +20,9 @@
 		412B1E8E28A7C07000B9C27E /* HomeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1E8D28A7C07000B9C27E /* HomeTest.swift */; };
 		412B1E9028A7C64300B9C27E /* HomeTestV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1E8F28A7C64300B9C27E /* HomeTestV2.swift */; };
 		412B1E9228A7C77900B9C27E /* FindingChoreMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1E9128A7C77900B9C27E /* FindingChoreMan.swift */; };
+		412B1E9528A7C9E900B9C27E /* SingleChoreMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1E9428A7C9E900B9C27E /* SingleChoreMan.swift */; };
+		412B1E9728A7CE6D00B9C27E /* SingleChoreManV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1E9628A7CE6D00B9C27E /* SingleChoreManV2.swift */; };
+		412B1E9928A7D1D500B9C27E /* FindingChoreManV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1E9828A7D1D500B9C27E /* FindingChoreManV2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		412B1E8D28A7C07000B9C27E /* HomeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTest.swift; sourceTree = "<group>"; };
 		412B1E8F28A7C64300B9C27E /* HomeTestV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTestV2.swift; sourceTree = "<group>"; };
 		412B1E9128A7C77900B9C27E /* FindingChoreMan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindingChoreMan.swift; sourceTree = "<group>"; };
+		412B1E9428A7C9E900B9C27E /* SingleChoreMan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleChoreMan.swift; sourceTree = "<group>"; };
+		412B1E9628A7CE6D00B9C27E /* SingleChoreManV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleChoreManV2.swift; sourceTree = "<group>"; };
+		412B1E9828A7D1D500B9C27E /* FindingChoreManV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindingChoreManV2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,7 @@
 				412B1E5C28A7961300B9C27E /* AppDelegate.swift */,
 				412B1E7E28A79B7500B9C27E /* SceneDelegate.swift */,
 				412B1E8628A7BB0600B9C27E /* LocationManager.swift */,
+				412B1E9328A7C9D300B9C27E /* TestViewComponents */,
 				412B1E5B28A7960300B9C27E /* TestViews */,
 				412B1E4528A7819F00B9C27E /* ContentView.swift */,
 				412B1E8028A7A1AE00B9C27E /* Store.swift */,
@@ -104,8 +111,18 @@
 				412B1E8D28A7C07000B9C27E /* HomeTest.swift */,
 				412B1E8F28A7C64300B9C27E /* HomeTestV2.swift */,
 				412B1E9128A7C77900B9C27E /* FindingChoreMan.swift */,
+				412B1E9828A7D1D500B9C27E /* FindingChoreManV2.swift */,
 			);
 			path = TestViews;
+			sourceTree = "<group>";
+		};
+		412B1E9328A7C9D300B9C27E /* TestViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				412B1E9428A7C9E900B9C27E /* SingleChoreMan.swift */,
+				412B1E9628A7CE6D00B9C27E /* SingleChoreManV2.swift */,
+			);
+			path = TestViewComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				412B1E9928A7D1D500B9C27E /* FindingChoreManV2.swift in Sources */,
 				412B1E8E28A7C07000B9C27E /* HomeTest.swift in Sources */,
 				412B1E8128A7A1AE00B9C27E /* Store.swift in Sources */,
 				412B1E8528A7BA0A00B9C27E /* LocationViewTest.swift in Sources */,
@@ -189,9 +207,11 @@
 				412B1E8728A7BB0600B9C27E /* LocationManager.swift in Sources */,
 				412B1E4628A7819F00B9C27E /* ContentView.swift in Sources */,
 				412B1E9028A7C64300B9C27E /* HomeTestV2.swift in Sources */,
+				412B1E9728A7CE6D00B9C27E /* SingleChoreManV2.swift in Sources */,
 				412B1E9228A7C77900B9C27E /* FindingChoreMan.swift in Sources */,
 				412B1E8C28A7BFBE00B9C27E /* MapViewTest.swift in Sources */,
 				412B1E4428A7819F00B9C27E /* ChoreStarApp.swift in Sources */,
+				412B1E9528A7C9E900B9C27E /* SingleChoreMan.swift in Sources */,
 				412B1E7F28A79B7500B9C27E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

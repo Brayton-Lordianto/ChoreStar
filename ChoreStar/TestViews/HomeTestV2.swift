@@ -14,14 +14,14 @@ struct HomeTestV2: View {
     }
     
     var body: some View {
-        NavigationView {
             TabView {
-                Text("hi")
+                Text("Welcome to Our App!")
                     .tabItem {
                         Label("Home", systemImage: "house")
                     }
                 
-                Text("hi2")
+                FindingChoreManV2()
+                    
                     .tabItem {
                         Label("Find Volunteers", systemImage: "person.3")
                     }
@@ -29,7 +29,7 @@ struct HomeTestV2: View {
                 
                 Text("hi2")
                     .tabItem {
-                        Label("Chore Records", systemImage: "pencil.and.ellipsis.rectangle")
+                        Label("Activity", systemImage: "pencil.and.ellipsis.rectangle")
                     }
 
                 Text("hi2")
@@ -41,8 +41,6 @@ struct HomeTestV2: View {
                     .tabItem {
                         Label("Profile", systemImage: "person.crop.circle")
                     }
-                
-            }
         }
     }
 }
