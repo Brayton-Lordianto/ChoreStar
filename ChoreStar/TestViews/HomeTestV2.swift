@@ -36,7 +36,7 @@ struct HomeTestV2: View {
                         Label("Activity", systemImage: "pencil.and.ellipsis.rectangle")
                     }
 
-                ChoreHomeView()
+                ChoreHomeViewV2()
                     .tabItem {
                         Label("Find a Chore", systemImage: "hare")
                     }

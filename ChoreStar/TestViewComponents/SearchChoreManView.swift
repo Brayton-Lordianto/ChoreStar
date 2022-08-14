@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-// I could easily use an array and filter results, but this is just a test to see the ap p flow. If I have time, I will clean it all up. 
+// I could easily use an array and filter results, but this is just a test to see the ap p flow. If I have time, I will clean it all up.
 let secondExampleUserInfo = userInfo(img: Image(systemName: "person.circle"), name: "Mary Jane", shortDescription: "Hi there", moreDetails: "no more details")
 
 struct SearchChoreManView: View {
@@ -16,13 +16,15 @@ struct SearchChoreManView: View {
         VStack {
             Form {
                 Section("Search by name") {
-                    TextField(text: $text) {
-                        HStack {
+                    HStack {
+                        Image(systemName: "magnifyingglass")
+                        TextField(text: $text) {
                             Text("Type name here")
                         }
+                        .textFieldStyle(OvalTextFieldStyle())
                     }
-
                 }
+                .listRowBackground(Color.clear)
                 
                 List {
                     if text == "" {
@@ -54,6 +56,16 @@ struct SearchChoreManView: View {
                 }
             }
         }
+    }
+}
+
+struct OvalTextFieldStyle: TextFieldStyle {
+    func _body(configuration: TextField<Self._Label>) -> some View {
+        configuration
+            .padding(10)
+            .background(Capsule().opacity(0.1))
+            .cornerRadius(20)
+            .shadow(color: .gray, radius: 10)
     }
 }
 

@@ -33,6 +33,7 @@
 		412B1EAB28A8B13700B9C27E /* SingleChoreToFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1EAA28A8B13700B9C27E /* SingleChoreToFind.swift */; };
 		412B1EAD28A8C24700B9C27E /* TwilioUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1EAC28A8C24700B9C27E /* TwilioUtility.swift */; };
 		412B1EB028A8C28D00B9C27E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 412B1EAF28A8C28D00B9C27E /* Alamofire */; };
+		412B1EB228A8C6BA00B9C27E /* ChoreHomeViewV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1EB128A8C6BA00B9C27E /* ChoreHomeViewV2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		412B1EA728A8AB6000B9C27E /* exampleChores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exampleChores.swift; sourceTree = "<group>"; };
 		412B1EAA28A8B13700B9C27E /* SingleChoreToFind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleChoreToFind.swift; sourceTree = "<group>"; };
 		412B1EAC28A8C24700B9C27E /* TwilioUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwilioUtility.swift; sourceTree = "<group>"; };
+		412B1EB128A8C6BA00B9C27E /* ChoreHomeViewV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreHomeViewV2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				412B1EA528A8AA6600B9C27E /* ChoreHomeView.swift */,
+				412B1EB128A8C6BA00B9C27E /* ChoreHomeViewV2.swift */,
 			);
 			path = SecondPhaseTestViews;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				412B1E8728A7BB0600B9C27E /* LocationManager.swift in Sources */,
 				412B1EAD28A8C24700B9C27E /* TwilioUtility.swift in Sources */,
 				412B1E4628A7819F00B9C27E /* ContentView.swift in Sources */,
+				412B1EB228A8C6BA00B9C27E /* ChoreHomeViewV2.swift in Sources */,
 				412B1E9028A7C64300B9C27E /* HomeTestV2.swift in Sources */,
 				412B1E9728A7CE6D00B9C27E /* SingleChoreManV2.swift in Sources */,
 				412B1E9228A7C77900B9C27E /* FindingChoreMan.swift in Sources */,

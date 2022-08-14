@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 
-func sendMessage(_ msg: String = "Hello from Swift!") {
+func sendTwilioMessage(_ msg: String = "Hello from Swift!") {
     if let accountSID = ProcessInfo.processInfo.environment["TWILIO_ACCOUNT_SID"],
        let authToken = ProcessInfo.processInfo.environment["TWILIO_AUTH_TOKEN"] {
         

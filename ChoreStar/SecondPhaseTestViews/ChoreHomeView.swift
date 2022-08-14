@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum Classification {
+enum Classification: String, CaseIterable {
     case cleaning
     case exercise
     case more

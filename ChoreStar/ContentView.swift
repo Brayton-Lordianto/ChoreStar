@@ -22,7 +22,7 @@ struct ContentView: View {
         }
         .onAppear {
             Task { await vm.fetch() }
-            sendMessage()
+            sendTwilioMessage()
         }
     }
 }
