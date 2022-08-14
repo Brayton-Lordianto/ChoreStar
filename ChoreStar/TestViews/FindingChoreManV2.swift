@@ -32,6 +32,8 @@ struct FindingChoreManV2: View {
                         Section("Recently active Near You") {
                             ScrollView(.horizontal, showsIndicators: false) {
                                 HStack {
+                                    SingleChoreManV2(user: exampleProfile2)
+                                    
                                     ForEach(0..<5) {_ in
                                         NavigationLink {
                                             ChoreManFullView(user: exampleUserInfo)

@@ -29,7 +29,7 @@ struct ChoreHomeViewV2: View {
                 }
             }
             
-            .navigationBarTitle("Chores")
+            .navigationBarTitle("Tasks")
             .foregroundColor(.green)
         }
     }
@@ -45,7 +45,7 @@ extension ChoreHomeViewV2 {
                 .frame(width: 150, height: 40)
                 .overlay(
                     HStack {
-                        Text("Add a Chore")
+                        Text("Add a Task")
                         Image(systemName: "plus")
                     }
                 )

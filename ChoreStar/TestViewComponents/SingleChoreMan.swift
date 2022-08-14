@@ -14,7 +14,6 @@ struct userInfo {
     let moreDetails: String
 }
 
-let exampleUserInfo = userInfo(img: Image(systemName: "person.circle.fill"), name: "John Doe", shortDescription: "My name is not Jeff", moreDetails: "Some more details about me.")
 
 struct SingleChoreMan: View {
     var user: userInfo

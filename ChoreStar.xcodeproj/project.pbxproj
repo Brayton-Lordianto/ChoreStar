@@ -40,6 +40,8 @@
 		412B1EBA28A8E91100B9C27E /* ActivityViewTest2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1EB928A8E91100B9C27E /* ActivityViewTest2.swift */; };
 		412B1EBC28A8EB0400B9C27E /* ActivityView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1EBB28A8EB0400B9C27E /* ActivityView3.swift */; };
 		412B1EBE28A8F24300B9C27E /* OtherClickChoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1EBD28A8F24300B9C27E /* OtherClickChoreView.swift */; };
+		412B1EC028A907B300B9C27E /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1EBF28A907B300B9C27E /* Profile.swift */; };
+		4170650D28A9151B008B9F46 /* ClickChoreViewV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170650C28A9151B008B9F46 /* ClickChoreViewV2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +81,8 @@
 		412B1EB928A8E91100B9C27E /* ActivityViewTest2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewTest2.swift; sourceTree = "<group>"; };
 		412B1EBB28A8EB0400B9C27E /* ActivityView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView3.swift; sourceTree = "<group>"; };
 		412B1EBD28A8F24300B9C27E /* OtherClickChoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherClickChoreView.swift; sourceTree = "<group>"; };
+		412B1EBF28A907B300B9C27E /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		4170650C28A9151B008B9F46 /* ClickChoreViewV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickChoreViewV2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,7 @@
 				412B1EA428A8A99B00B9C27E /* SecondPhaseTestViews */,
 				412B1EA928A8B12200B9C27E /* SecondPhaseComponents */,
 				412B1E4528A7819F00B9C27E /* ContentView.swift */,
+				412B1EBF28A907B300B9C27E /* Profile.swift */,
 				412B1EAC28A8C24700B9C27E /* TwilioUtility.swift */,
 				412B1E8028A7A1AE00B9C27E /* Store.swift */,
 				412B1EA728A8AB6000B9C27E /* exampleChores.swift */,
@@ -178,6 +183,7 @@
 				412B1EB928A8E91100B9C27E /* ActivityViewTest2.swift */,
 				412B1EBB28A8EB0400B9C27E /* ActivityView3.swift */,
 				412B1EB728A8DD0C00B9C27E /* ClickChoreView.swift */,
+				4170650C28A9151B008B9F46 /* ClickChoreViewV2.swift */,
 				412B1EBD28A8F24300B9C27E /* OtherClickChoreView.swift */,
 			);
 			path = SecondPhaseTestViews;
@@ -276,7 +282,9 @@
 				412B1E9F28A7E2FB00B9C27E /* SingleChore.swift in Sources */,
 				412B1E8128A7A1AE00B9C27E /* Store.swift in Sources */,
 				412B1E8528A7BA0A00B9C27E /* LocationViewTest.swift in Sources */,
+				412B1EC028A907B300B9C27E /* Profile.swift in Sources */,
 				412B1E9B28A7DC7200B9C27E /* ChoreManFullView.swift in Sources */,
+				4170650D28A9151B008B9F46 /* ClickChoreViewV2.swift in Sources */,
 				412B1E5D28A7961300B9C27E /* AppDelegate.swift in Sources */,
 				412B1E8728A7BB0600B9C27E /* LocationManager.swift in Sources */,
 				412B1EAD28A8C24700B9C27E /* TwilioUtility.swift in Sources */,

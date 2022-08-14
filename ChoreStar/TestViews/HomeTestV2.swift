@@ -3,13 +3,13 @@
 //  ChoreStar
 //
 //  Created by Brayton Lordianto on 8/13/22.
-//
+// 
 
 import SwiftUI
 
 struct HomeTestV2: View {
     init(){
-        UITableView.appearance().backgroundColor = .white
+//        UITableView.appearance().backgroundColor = .white
     }
     
     
@@ -20,7 +20,12 @@ struct HomeTestV2: View {
     
     var body: some View {
         TabView {
-            Text("hi2")
+            NavigationView {
+                Profile(user: exampleProfile1)
+                    .toolbar(content: {
+                        EditButton()
+                    })
+            }
                 .tabItem {
                     Label("Profile", systemImage: "person.crop.circle")
                 }
@@ -43,7 +48,7 @@ struct HomeTestV2: View {
             
             ChoreHomeViewV2()
                 .tabItem {
-                    Label("Find a Chore", systemImage: "hare")
+                    Label("Find a Task", systemImage: "hare")
                 }
             
         }

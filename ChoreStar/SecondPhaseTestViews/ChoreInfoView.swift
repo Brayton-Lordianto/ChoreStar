@@ -11,6 +11,8 @@ struct ChoreInfoView: View {
     var chore: Chore
     var v1 = true
     @Environment(\.presentationMode) var pm
+    @State var showingSheet = false
+
     var body: some View {
         ScrollView {
             VStack {
@@ -27,6 +29,9 @@ struct ChoreInfoView: View {
                     
                     Text("Issued By: " + chore.issuedByUser.name)
                         .foregroundColor(.blue)
+                        .onTapGesture {
+                            showingSheet = true
+                        }
                     
                     Divider()
                     
@@ -39,6 +44,18 @@ struct ChoreInfoView: View {
 
             }
         }
+        .sheet(isPresented: $showingSheet) {
+            NavigationView {
+                Profile(user: exampleProfile1)
+                    .toolbar {
+                        HStack {
+                            Image("phone.fill")
+                            Button("Contact") {}
+                        }
+                    }
+            }
+        }
+
         .overlay(alignment: .topLeading) {
             backButton
                 .offset(x: 140, y:80)
@@ -54,7 +71,7 @@ extension ChoreInfoView {
     var acceptChoreButton: some View {
         Button {
             Task {
-                sendTwilioMessage("John Doe has just offered his help for your chore: \(chore.name)")
+                sendTwilioMessage("Jimmy Fallon has just offered his help for your chore: \(chore.name)")
             }
         } label: {
             Rectangle()
@@ -62,7 +79,7 @@ extension ChoreInfoView {
                 .foregroundColor(.green)
                 .cornerRadius(13)
                 .overlay(
-                    Text("Accept Chore")
+                    Text("Accept Task")
                         .foregroundColor(.white)
                 )
         }

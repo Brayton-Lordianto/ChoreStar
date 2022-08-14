@@ -14,7 +14,7 @@ class PaymentManager: ObservableObject {
     func fetch() async {
         Task {
             do {
-                products = try await Product.products(for: ["com.temporary.test","com.temporary.test2", "com.temporary.test4"])
+                products = try await Product.products(for: ["com.temporary.test6"])
                 print("PRODUCTS:")
                 print(products)
             } catch {
@@ -23,8 +23,9 @@ class PaymentManager: ObservableObject {
         }
     }
     
-    func purchase(tag: String = "test4") async {
+    func purchase() async {
         Task {
+            let tag = "tip for volunteer"
             guard let product = products.first(where: {$0.displayName == tag}) else {
                 print("NO PRODUCT NAMED \(tag). \(products)")
                 return

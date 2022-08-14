@@ -13,9 +13,9 @@ struct ChoreStarApp: App {
         WindowGroup {
 //            ContentView()
 //            LocationView()
-//            HomeTestV2()
+            HomeTestV2()
 //            ActivityView()
-            ActivityViewTest2()
+//            ActivityViewTest2()
 //            ActivityView3()
         }
     }

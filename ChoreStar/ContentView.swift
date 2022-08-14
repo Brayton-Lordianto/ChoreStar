@@ -17,7 +17,7 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Button("Pay") {
-                Task { await vm.purchase(tag: "test3") }
+                Task { await vm.purchase() }
             }
         }
         .onAppear {

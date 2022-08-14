@@ -21,7 +21,7 @@ struct ClickChoreView: View {
                     Spacer()
                     user.img
                         .resizable()
-                        .frame(height: 150)
+                        .frame(height: 125)
                         .aspectRatio(1.0, contentMode: .fit)
                     Spacer()
                 }
@@ -32,7 +32,7 @@ struct ClickChoreView: View {
             // select payment or not
             Button("Give a $0.99 Tip to John Doe") {
                 Task {
-                    await pm.purchase(tag: "test4")
+                    await pm.purchase()
                     exampleChores[0].isCompleted = true
                     presentationMode.wrappedValue.dismiss()
                 }
@@ -51,6 +51,6 @@ struct ClickChoreView: View {
 
 struct ClickChoreView_Previews: PreviewProvider {
     static var previews: some View {
-        ClickChoreView(user: exampleUserInfo, chore: exampleChores[0])
+        ClickChoreView(user: exampleProfile2, chore: exampleChores[0])
     }
 }

@@ -30,12 +30,13 @@ struct ActivityViewTest2: View {
 
 extension ActivityViewTest2 {
     var list: some View {
-        Section("uncompleted chores") {
+        Section("uncompleted tasks") {
             List {
                 ForEach(uncompletedChores, id: \.name) { exampleChore in
                     NavigationLink(destination: {
                         if exampleChore.receivedByUser {
-                            ClickChoreView(user: exampleUserInfo, chore: exampleChores[0])
+                            ClickChoreViewV2(user: exampleProfile2, chore: exampleChores[0])
+                                .navigationTitle("Your task's volunteer is...")
                         } else {
                             // sent to the user having accepted it, and choice to accept it
                             OtherClickChoreView()
@@ -50,7 +51,7 @@ extension ActivityViewTest2 {
     }
     
     var list2: some View {
-        Section("completed chores history") {
+        Section("completed tasks history") {
             List {
 //                Text("hi")
                 ForEach(completedChores, id: \.name) { exampleChore in
