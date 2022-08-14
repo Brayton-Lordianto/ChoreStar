@@ -1,4 +1,5 @@
-# ChoreStar
+# Village Volunteer 
+*app name is renamed to Village Volunteer
 A mobile app where people can post requests for volunteer assistance with daily chores. For the elderly.
 
 # Installation
