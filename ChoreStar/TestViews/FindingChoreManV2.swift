@@ -29,7 +29,7 @@ struct FindingChoreManV2: View {
                                 HStack {
                                     ForEach(0..<5) {_ in
                                         NavigationLink {
-                                            Text("hi")
+                                            ChoreManFullView(user: exampleUserInfo)
                                         } label: {
                                             SingleChoreManV2(user: exampleUserInfo)
                                                 .padding()

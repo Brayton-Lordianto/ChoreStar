@@ -23,6 +23,11 @@
 		412B1E9528A7C9E900B9C27E /* SingleChoreMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1E9428A7C9E900B9C27E /* SingleChoreMan.swift */; };
 		412B1E9728A7CE6D00B9C27E /* SingleChoreManV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1E9628A7CE6D00B9C27E /* SingleChoreManV2.swift */; };
 		412B1E9928A7D1D500B9C27E /* FindingChoreManV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1E9828A7D1D500B9C27E /* FindingChoreManV2.swift */; };
+		412B1E9B28A7DC7200B9C27E /* ChoreManFullView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1E9A28A7DC7200B9C27E /* ChoreManFullView.swift */; };
+		412B1E9D28A7E29C00B9C27E /* ChooseChoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1E9C28A7E29C00B9C27E /* ChooseChoreView.swift */; };
+		412B1E9F28A7E2FB00B9C27E /* SingleChore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1E9E28A7E2FB00B9C27E /* SingleChore.swift */; };
+		412B1EA128A7E55100B9C27E /* PaymentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1EA028A7E55100B9C27E /* PaymentManager.swift */; };
+		412B1EA328A7F8D400B9C27E /* SearchChoreManView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1EA228A7F8D400B9C27E /* SearchChoreManView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +51,11 @@
 		412B1E9428A7C9E900B9C27E /* SingleChoreMan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleChoreMan.swift; sourceTree = "<group>"; };
 		412B1E9628A7CE6D00B9C27E /* SingleChoreManV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleChoreManV2.swift; sourceTree = "<group>"; };
 		412B1E9828A7D1D500B9C27E /* FindingChoreManV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindingChoreManV2.swift; sourceTree = "<group>"; };
+		412B1E9A28A7DC7200B9C27E /* ChoreManFullView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreManFullView.swift; sourceTree = "<group>"; };
+		412B1E9C28A7E29C00B9C27E /* ChooseChoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseChoreView.swift; sourceTree = "<group>"; };
+		412B1E9E28A7E2FB00B9C27E /* SingleChore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleChore.swift; sourceTree = "<group>"; };
+		412B1EA028A7E55100B9C27E /* PaymentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentManager.swift; sourceTree = "<group>"; };
+		412B1EA228A7F8D400B9C27E /* SearchChoreManView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchChoreManView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +94,7 @@
 				412B1E5C28A7961300B9C27E /* AppDelegate.swift */,
 				412B1E7E28A79B7500B9C27E /* SceneDelegate.swift */,
 				412B1E8628A7BB0600B9C27E /* LocationManager.swift */,
+				412B1EA028A7E55100B9C27E /* PaymentManager.swift */,
 				412B1E9328A7C9D300B9C27E /* TestViewComponents */,
 				412B1E5B28A7960300B9C27E /* TestViews */,
 				412B1E4528A7819F00B9C27E /* ContentView.swift */,
@@ -121,6 +132,10 @@
 			children = (
 				412B1E9428A7C9E900B9C27E /* SingleChoreMan.swift */,
 				412B1E9628A7CE6D00B9C27E /* SingleChoreManV2.swift */,
+				412B1E9A28A7DC7200B9C27E /* ChoreManFullView.swift */,
+				412B1E9C28A7E29C00B9C27E /* ChooseChoreView.swift */,
+				412B1E9E28A7E2FB00B9C27E /* SingleChore.swift */,
+				412B1EA228A7F8D400B9C27E /* SearchChoreManView.swift */,
 			);
 			path = TestViewComponents;
 			sourceTree = "<group>";
@@ -201,16 +216,21 @@
 			files = (
 				412B1E9928A7D1D500B9C27E /* FindingChoreManV2.swift in Sources */,
 				412B1E8E28A7C07000B9C27E /* HomeTest.swift in Sources */,
+				412B1EA328A7F8D400B9C27E /* SearchChoreManView.swift in Sources */,
+				412B1E9F28A7E2FB00B9C27E /* SingleChore.swift in Sources */,
 				412B1E8128A7A1AE00B9C27E /* Store.swift in Sources */,
 				412B1E8528A7BA0A00B9C27E /* LocationViewTest.swift in Sources */,
+				412B1E9B28A7DC7200B9C27E /* ChoreManFullView.swift in Sources */,
 				412B1E5D28A7961300B9C27E /* AppDelegate.swift in Sources */,
 				412B1E8728A7BB0600B9C27E /* LocationManager.swift in Sources */,
 				412B1E4628A7819F00B9C27E /* ContentView.swift in Sources */,
 				412B1E9028A7C64300B9C27E /* HomeTestV2.swift in Sources */,
 				412B1E9728A7CE6D00B9C27E /* SingleChoreManV2.swift in Sources */,
 				412B1E9228A7C77900B9C27E /* FindingChoreMan.swift in Sources */,
+				412B1EA128A7E55100B9C27E /* PaymentManager.swift in Sources */,
 				412B1E8C28A7BFBE00B9C27E /* MapViewTest.swift in Sources */,
 				412B1E4428A7819F00B9C27E /* ChoreStarApp.swift in Sources */,
+				412B1E9D28A7E29C00B9C27E /* ChooseChoreView.swift in Sources */,
 				412B1E9528A7C9E900B9C27E /* SingleChoreMan.swift in Sources */,
 				412B1E7F28A79B7500B9C27E /* SceneDelegate.swift in Sources */,
 			);

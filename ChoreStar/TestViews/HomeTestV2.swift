@@ -21,13 +21,12 @@ struct HomeTestV2: View {
                     }
                 
                 FindingChoreManV2()
-                    
                     .tabItem {
                         Label("Find Volunteers", systemImage: "person.3")
                     }
 
                 
-                Text("hi2")
+                Image(systemName: "person")
                     .tabItem {
                         Label("Activity", systemImage: "pencil.and.ellipsis.rectangle")
                     }

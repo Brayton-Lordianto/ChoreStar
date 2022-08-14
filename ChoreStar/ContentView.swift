@@ -9,7 +9,7 @@ import SwiftUI
 import StoreKit
 
 struct ContentView: View {
-    var vm = ViewModel()
+    var vm = PaymentManager()
     
     var body: some View {
         VStack {
@@ -17,7 +17,7 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Button("Pay") {
-                Task { await vm.purchase(tag: "testProduct2") }
+                Task { await vm.purchase(tag: "test3") }
             }
         }
         .onAppear {

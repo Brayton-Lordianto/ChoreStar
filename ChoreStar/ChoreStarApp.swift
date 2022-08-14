@@ -12,7 +12,8 @@ struct ChoreStarApp: App {
     var body: some Scene {
         WindowGroup {
 //            ContentView()
-            LocationView()
+//            LocationView()
+            HomeTestV2()
         }
     }
 }

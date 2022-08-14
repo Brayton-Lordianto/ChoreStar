@@ -14,9 +14,8 @@ struct FindingChoreMan: View {
         NavigationView {
             VStack {
                 Form {
-                    
-                    ForEach(0..<5) {_ in
-                        List {
+                    List {
+                        ForEach(0..<5) {_ in
                             NavigationLink {
                                 Text("hi")
                             } label: {
@@ -34,14 +33,14 @@ struct FindingChoreMan: View {
 extension FindingChoreMan {
     var mapLayer: some View {
         Map(coordinateRegion: .constant(MKCoordinateRegion()))
-        .aspectRatio(contentMode: .fit)
-        .allowsHitTesting(false)
-        .cornerRadius(40)
+            .aspectRatio(contentMode: .fit)
+            .allowsHitTesting(false)
+            .cornerRadius(40)
     }
 }
 
 struct FindingChoreMan_Previews: PreviewProvider {
     static var previews: some View {
-            FindingChoreMan()
+        FindingChoreMan()
     }
 }
