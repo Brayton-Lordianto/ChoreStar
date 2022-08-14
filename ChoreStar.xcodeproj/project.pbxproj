@@ -39,6 +39,7 @@
 		412B1EB828A8DD0C00B9C27E /* ClickChoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1EB728A8DD0C00B9C27E /* ClickChoreView.swift */; };
 		412B1EBA28A8E91100B9C27E /* ActivityViewTest2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1EB928A8E91100B9C27E /* ActivityViewTest2.swift */; };
 		412B1EBC28A8EB0400B9C27E /* ActivityView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1EBB28A8EB0400B9C27E /* ActivityView3.swift */; };
+		412B1EBE28A8F24300B9C27E /* OtherClickChoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1EBD28A8F24300B9C27E /* OtherClickChoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,7 @@
 		412B1EB728A8DD0C00B9C27E /* ClickChoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickChoreView.swift; sourceTree = "<group>"; };
 		412B1EB928A8E91100B9C27E /* ActivityViewTest2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewTest2.swift; sourceTree = "<group>"; };
 		412B1EBB28A8EB0400B9C27E /* ActivityView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView3.swift; sourceTree = "<group>"; };
+		412B1EBD28A8F24300B9C27E /* OtherClickChoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherClickChoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 				412B1EB928A8E91100B9C27E /* ActivityViewTest2.swift */,
 				412B1EBB28A8EB0400B9C27E /* ActivityView3.swift */,
 				412B1EB728A8DD0C00B9C27E /* ClickChoreView.swift */,
+				412B1EBD28A8F24300B9C27E /* OtherClickChoreView.swift */,
 			);
 			path = SecondPhaseTestViews;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				412B1E8728A7BB0600B9C27E /* LocationManager.swift in Sources */,
 				412B1EAD28A8C24700B9C27E /* TwilioUtility.swift in Sources */,
 				412B1E4628A7819F00B9C27E /* ContentView.swift in Sources */,
+				412B1EBE28A8F24300B9C27E /* OtherClickChoreView.swift in Sources */,
 				412B1EB228A8C6BA00B9C27E /* ChoreHomeViewV2.swift in Sources */,
 				412B1E9028A7C64300B9C27E /* HomeTestV2.swift in Sources */,
 				412B1EB628A8D7DF00B9C27E /* ActivityView.swift in Sources */,

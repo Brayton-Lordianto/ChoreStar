@@ -39,9 +39,10 @@ extension ChoreHomeViewV2 {
     var addButton: some View {
         HStack {
             Spacer()
-            Capsule()
+            Rectangle()
                 .fill(Color.green)
-                .frame(width: 150, height: 35)
+                .cornerRadius(12)
+                .frame(width: 150, height: 40)
                 .overlay(
                     HStack {
                         Text("Add a Chore")
@@ -99,7 +100,7 @@ extension ChoreHomeViewV2 {
                     HStack {
                         ForEach(exampleChores.filter {$0.classification == cf}, id: \.name) { chore in
                             NavigationLink {
-                                Text("hi")
+                                ChoreInfoView(chore: chore)
                             } label: {
                                 SingleChoreToFind(chore: chore)
                             }

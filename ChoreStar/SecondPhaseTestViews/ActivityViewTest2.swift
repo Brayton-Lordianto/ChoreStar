@@ -38,17 +38,10 @@ extension ActivityViewTest2 {
                             ClickChoreView(user: exampleUserInfo, chore: exampleChores[0])
                         } else {
                             // sent to the user having accepted it, and choice to accept it
+                            OtherClickChoreView()
                         }
                     }, label: {
-                        VStack {
-                            Text(exampleChore.name)
-                                .font(.headline)
-                                .fontWeight(.bold)
-                                .foregroundColor(.green)
-                            
-                            Text(exampleChore.name)
-                                .font(.subheadline)
-                        }
+                        getRowView(chore: exampleChore)
                     })
                     
                 }
@@ -61,20 +54,29 @@ extension ActivityViewTest2 {
             List {
 //                Text("hi")
                 ForEach(completedChores, id: \.name) { exampleChore in
-                    VStack {
-                        Text(exampleChore.name)
-                            .font(.headline)
-                            .fontWeight(.bold)
-                            .foregroundColor(.green)
-
-                        Text(exampleChore.name)
-                            .font(.subheadline)
-                    }
+                    getRowView(chore: exampleChore)
                 }
             }
         }
     }
 
+    func getRowView(chore: Chore) -> some View {
+        HStack {
+            chore.image
+                .resizable()
+                .frame(width: 50, height: 50)
+            
+            VStack {
+                Text(chore.name)
+                    .font(.headline)
+                    .fontWeight(.bold)
+                    .foregroundColor(.green)
+
+                Text(chore.name)
+                    .font(.subheadline)
+            }
+        }
+    }
     
 }
 

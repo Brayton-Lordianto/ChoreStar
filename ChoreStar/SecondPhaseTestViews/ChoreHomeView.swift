@@ -20,6 +20,10 @@ struct Chore {
     let issuedByUser: userInfo
     var receivedByUser = false
     var isCompleted = false
+    var description = """
+        I need some help with the garbage.
+        I would prefer it if someone strong could help me.
+    """
 }
 
 struct ChoreHomeView: View {

@@ -11,7 +11,7 @@ struct HomeTestV2: View {
     init(){
         UITableView.appearance().backgroundColor = .white
     }
-
+    
     
     var userMode = UserMode.client
     var userModeTitle: String {
@@ -19,32 +19,33 @@ struct HomeTestV2: View {
     }
     
     var body: some View {
-            TabView {
-                Text("Welcome to Our App!")
-                    .tabItem {
-                        Label("Home", systemImage: "house")
-                    }
-                
-                FindingChoreManV2()
-                    .tabItem {
-                        Label("Find Volunteers", systemImage: "person.3")
-                    }
-
-                
-                Image(systemName: "person")
-                    .tabItem {
-                        Label("Activity", systemImage: "pencil.and.ellipsis.rectangle")
-                    }
-
-                ChoreHomeViewV2()
-                    .tabItem {
-                        Label("Find a Chore", systemImage: "hare")
-                    }
-                
-                Text("hi2")
-                    .tabItem {
-                        Label("Profile", systemImage: "person.crop.circle")
-                    }
+        TabView {
+            Text("hi2")
+                .tabItem {
+                    Label("Profile", systemImage: "person.crop.circle")
+                }
+            
+            Text("Welcome to Our App!")
+                .tabItem {
+                    Label("Home", systemImage: "house")
+                }
+            
+            FindingChoreManV2()
+                .tabItem {
+                    Label("Find Volunteers", systemImage: "person.3")
+                }
+            
+            
+            ActivityViewTest2()
+                .tabItem {
+                    Label("Activity", systemImage: "pencil.and.ellipsis.rectangle")
+                }
+            
+            ChoreHomeViewV2()
+                .tabItem {
+                    Label("Find a Chore", systemImage: "hare")
+                }
+            
         }
     }
 }
