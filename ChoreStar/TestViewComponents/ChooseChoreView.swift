@@ -4,7 +4,7 @@
 //
 //  Created by Brayton Lordianto on 8/13/22.
 //
-
+//
 import SwiftUI
 
 let exampleChore = userInfo(img: Image(""), name: "Walk me home", shortDescription: "From Marina Bay Sands to Orchard Road", moreDetails: "")

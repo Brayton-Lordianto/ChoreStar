@@ -10,7 +10,7 @@ import SwiftUI
 
 let thirdExampleUser = userInfo(img: Image("user3"), name: "Jimmy Fallon", shortDescription: "I need people to help me with my chores", moreDetails: "NA")
 
-let exampleChores = [
+var exampleChores = [
     Chore(image: Image("1"), name: "Collect Garbage", classification: .cleaning, issuedByUser: thirdExampleUser),
     Chore(image: Image("2"), name: "Clean the Cabinet", classification: .cleaning, issuedByUser: thirdExampleUser),
     Chore(image: Image("3"), name: "Walk me Home", classification: .exercise, issuedByUser: thirdExampleUser),

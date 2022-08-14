@@ -18,6 +18,8 @@ struct Chore {
     let name: String
     let classification: Classification
     let issuedByUser: userInfo
+    var receivedByUser = false
+    var isCompleted = false
 }
 
 struct ChoreHomeView: View {
