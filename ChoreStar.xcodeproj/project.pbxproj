@@ -28,6 +28,11 @@
 		412B1E9F28A7E2FB00B9C27E /* SingleChore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1E9E28A7E2FB00B9C27E /* SingleChore.swift */; };
 		412B1EA128A7E55100B9C27E /* PaymentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1EA028A7E55100B9C27E /* PaymentManager.swift */; };
 		412B1EA328A7F8D400B9C27E /* SearchChoreManView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1EA228A7F8D400B9C27E /* SearchChoreManView.swift */; };
+		412B1EA628A8AA6600B9C27E /* ChoreHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1EA528A8AA6600B9C27E /* ChoreHomeView.swift */; };
+		412B1EA828A8AB6000B9C27E /* exampleChores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1EA728A8AB6000B9C27E /* exampleChores.swift */; };
+		412B1EAB28A8B13700B9C27E /* SingleChoreToFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1EAA28A8B13700B9C27E /* SingleChoreToFind.swift */; };
+		412B1EAD28A8C24700B9C27E /* TwilioUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B1EAC28A8C24700B9C27E /* TwilioUtility.swift */; };
+		412B1EB028A8C28D00B9C27E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 412B1EAF28A8C28D00B9C27E /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +61,10 @@
 		412B1E9E28A7E2FB00B9C27E /* SingleChore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleChore.swift; sourceTree = "<group>"; };
 		412B1EA028A7E55100B9C27E /* PaymentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentManager.swift; sourceTree = "<group>"; };
 		412B1EA228A7F8D400B9C27E /* SearchChoreManView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchChoreManView.swift; sourceTree = "<group>"; };
+		412B1EA528A8AA6600B9C27E /* ChoreHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreHomeView.swift; sourceTree = "<group>"; };
+		412B1EA728A8AB6000B9C27E /* exampleChores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exampleChores.swift; sourceTree = "<group>"; };
+		412B1EAA28A8B13700B9C27E /* SingleChoreToFind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleChoreToFind.swift; sourceTree = "<group>"; };
+		412B1EAC28A8C24700B9C27E /* TwilioUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwilioUtility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				412B1EB028A8C28D00B9C27E /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,8 +107,12 @@
 				412B1EA028A7E55100B9C27E /* PaymentManager.swift */,
 				412B1E9328A7C9D300B9C27E /* TestViewComponents */,
 				412B1E5B28A7960300B9C27E /* TestViews */,
+				412B1EA428A8A99B00B9C27E /* SecondPhaseTestViews */,
+				412B1EA928A8B12200B9C27E /* SecondPhaseComponents */,
 				412B1E4528A7819F00B9C27E /* ContentView.swift */,
+				412B1EAC28A8C24700B9C27E /* TwilioUtility.swift */,
 				412B1E8028A7A1AE00B9C27E /* Store.swift */,
+				412B1EA728A8AB6000B9C27E /* exampleChores.swift */,
 				412B1E4728A781A000B9C27E /* Assets.xcassets */,
 				412B1E4928A781A000B9C27E /* ChoreStar.entitlements */,
 				412B1E4A28A781A000B9C27E /* Preview Content */,
@@ -140,6 +154,22 @@
 			path = TestViewComponents;
 			sourceTree = "<group>";
 		};
+		412B1EA428A8A99B00B9C27E /* SecondPhaseTestViews */ = {
+			isa = PBXGroup;
+			children = (
+				412B1EA528A8AA6600B9C27E /* ChoreHomeView.swift */,
+			);
+			path = SecondPhaseTestViews;
+			sourceTree = "<group>";
+		};
+		412B1EA928A8B12200B9C27E /* SecondPhaseComponents */ = {
+			isa = PBXGroup;
+			children = (
+				412B1EAA28A8B13700B9C27E /* SingleChoreToFind.swift */,
+			);
+			path = SecondPhaseComponents;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,6 +187,7 @@
 			);
 			name = ChoreStar;
 			packageProductDependencies = (
+				412B1EAF28A8C28D00B9C27E /* Alamofire */,
 			);
 			productName = ChoreStar;
 			productReference = 412B1E4028A7819F00B9C27E /* ChoreStar.app */;
@@ -187,6 +218,7 @@
 			);
 			mainGroup = 412B1E3728A7819F00B9C27E;
 			packageReferences = (
+				412B1EAE28A8C28D00B9C27E /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 412B1E4128A7819F00B9C27E /* Products */;
 			projectDirPath = "";
@@ -217,12 +249,15 @@
 				412B1E9928A7D1D500B9C27E /* FindingChoreManV2.swift in Sources */,
 				412B1E8E28A7C07000B9C27E /* HomeTest.swift in Sources */,
 				412B1EA328A7F8D400B9C27E /* SearchChoreManView.swift in Sources */,
+				412B1EA828A8AB6000B9C27E /* exampleChores.swift in Sources */,
+				412B1EA628A8AA6600B9C27E /* ChoreHomeView.swift in Sources */,
 				412B1E9F28A7E2FB00B9C27E /* SingleChore.swift in Sources */,
 				412B1E8128A7A1AE00B9C27E /* Store.swift in Sources */,
 				412B1E8528A7BA0A00B9C27E /* LocationViewTest.swift in Sources */,
 				412B1E9B28A7DC7200B9C27E /* ChoreManFullView.swift in Sources */,
 				412B1E5D28A7961300B9C27E /* AppDelegate.swift in Sources */,
 				412B1E8728A7BB0600B9C27E /* LocationManager.swift in Sources */,
+				412B1EAD28A8C24700B9C27E /* TwilioUtility.swift in Sources */,
 				412B1E4628A7819F00B9C27E /* ContentView.swift in Sources */,
 				412B1E9028A7C64300B9C27E /* HomeTestV2.swift in Sources */,
 				412B1E9728A7CE6D00B9C27E /* SingleChoreManV2.swift in Sources */,
@@ -233,6 +268,7 @@
 				412B1E9D28A7E29C00B9C27E /* ChooseChoreView.swift in Sources */,
 				412B1E9528A7C9E900B9C27E /* SingleChoreMan.swift in Sources */,
 				412B1E7F28A79B7500B9C27E /* SceneDelegate.swift in Sources */,
+				412B1EAB28A8B13700B9C27E /* SingleChoreToFind.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +480,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		412B1EAE28A8C28D00B9C27E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = exactVersion;
+				version = 5.6.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		412B1EAF28A8C28D00B9C27E /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 412B1EAE28A8C28D00B9C27E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 412B1E3828A7819F00B9C27E /* Project object */;
 }

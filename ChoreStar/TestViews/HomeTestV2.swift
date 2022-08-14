@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct HomeTestV2: View {
+    init(){
+        UITableView.appearance().backgroundColor = .white
+    }
+
+    
     var userMode = UserMode.client
     var userModeTitle: String {
         "Your profile is a  " + (userMode == .client ? "chore-giver" : "chore-star volunteer")
@@ -31,7 +36,7 @@ struct HomeTestV2: View {
                         Label("Activity", systemImage: "pencil.and.ellipsis.rectangle")
                     }
 
-                Text("hi2")
+                ChoreHomeView()
                     .tabItem {
                         Label("Find a Chore", systemImage: "hare")
                     }

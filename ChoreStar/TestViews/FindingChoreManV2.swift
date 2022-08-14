@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct FindingChoreManV2: View {
+    
+
+    
     @State var
     search = ""
     var body: some View {
@@ -18,15 +21,17 @@ struct FindingChoreManV2: View {
                         
                         Section("Your Location") {
                             Text("Singapore, Marina Bay Sands")
-                            Button("Change Location") {}
-                            Button("Search by Name Instead   ->") {}
+                            NavigationLink("Change Location") {SearchChoreManView()}
+                                .foregroundColor(.green)
+                            NavigationLink("Search by Name Instead") {SearchChoreManView()}
+                                .foregroundColor(.green)
                         }
                         .shadow(radius: 15)
 
                         
                         Section("Recently active Near You") {
                             ScrollView(.horizontal, showsIndicators: false) {
-                                HStack {
+                                HStack {
                                     ForEach(0..<5) {_ in
                                         NavigationLink {
                                             ChoreManFullView(user: exampleUserInfo)
@@ -45,7 +50,7 @@ struct FindingChoreManV2: View {
 
                         Section("Great Ratings near you") {
                             ScrollView(.horizontal, showsIndicators: false) {
-                                HStack {
+                                HStack {
                                     ForEach(0..<5) {_ in
                                         NavigationLink {
                                             Text("hi")
@@ -61,7 +66,7 @@ struct FindingChoreManV2: View {
 
                         Section("new to chorestar") {
                             ScrollView(.horizontal, showsIndicators: false) {
-                                HStack {
+                                HStack {
                                     ForEach(0..<5) {_ in
                                         NavigationLink {
                                             Text("hi")
@@ -89,7 +94,7 @@ struct FindingChoreManV2: View {
                 
 //                Color.white.opacity(0.2).ignoresSafeArea()
                 
-                .navigationTitle("Chore Stars Near You!")
+                .navigationTitle("Volunteers Near You!")
             }
         }
     }

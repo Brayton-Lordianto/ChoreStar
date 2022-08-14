@@ -11,9 +11,9 @@ import SwiftUI
 struct ChoreStarApp: App {
     var body: some Scene {
         WindowGroup {
-//            ContentView()
+            ContentView()
 //            LocationView()
-            HomeTestV2()
+//            HomeTestV2()
         }
     }
 }

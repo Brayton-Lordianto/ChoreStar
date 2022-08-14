@@ -45,7 +45,7 @@ struct SingleChoreManV2: View {
             .padding(20)
             .background(
                 RoundedRectangle(cornerRadius: 25)
-                    .fill(.thinMaterial)
+                    .fill(.green)
                     .shadow(radius: 12)
         )
 //            Text("hi")

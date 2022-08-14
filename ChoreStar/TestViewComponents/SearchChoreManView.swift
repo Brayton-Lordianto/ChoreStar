@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+// I could easily use an array and filter results, but this is just a test to see the ap p flow. If I have time, I will clean it all up. 
+let secondExampleUserInfo = userInfo(img: Image(systemName: "person.circle"), name: "Mary Jane", shortDescription: "Hi there", moreDetails: "no more details")
+
 struct SearchChoreManView: View {
     @State var text = ""
     var body: some View {
@@ -24,7 +27,9 @@ struct SearchChoreManView: View {
                 List {
                     if text == "" {
                         // add one more here
-                        
+                        NavigationLink {Text("hi")} label: {
+                            SingleChoreMan(user: secondExampleUserInfo)
+                        }
                         ForEach(0..<5) {_ in
                             NavigationLink {
                                 Text("hi")
@@ -42,6 +47,9 @@ struct SearchChoreManView: View {
                         }
                     } else {
                         // do single here
+                        NavigationLink {Text("hi")} label: {
+                            SingleChoreMan(user: secondExampleUserInfo)
+                        }
                     }
                 }
             }
